@@ -31,12 +31,11 @@ public class MainActivity extends AppCompatActivity {
                     Integer valueTwo = Integer.valueOf(numberTwo.getText().toString());
 
                     if (valueOne.equals(valueTwo)) {
-                        result.setText("Equal");
+                        result.setText("Equal!!!");
                     } else {
                         result.setText("Not equal");
                     }
                 } catch (NumberFormatException exc) {
-                    Log.d("My awesome app", "Incorret input");
                     result.setText("Please enter a number");
                 }
             }
